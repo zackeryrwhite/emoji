@@ -18,14 +18,14 @@ function loadEmojis(){
 		if ( emojiColors[i] == 'false' ) {
 			continue;
 		}
-		fileNumber = pad(i+1 , 5);
+		fileNumber = pad(i+1 , 4);
 		img = 'emoji-images/' + fileNumber + '.png';
 		colorMap[emojiColors[i]] = img
 	}
 	return colorMap;
 }
 
-function pad(num, size){ return ('0000' + num).substr(-size); }
+function pad(num, size){ return ('000' + num).substr(-size); }
 /**
  * For a given RGB color, find the closest match Emoji.
  *
