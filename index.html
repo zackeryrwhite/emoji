@@ -106,7 +106,7 @@ EmojiMosaic.prototype.imageLoaded = function() {
 	this.targetCanvasContext = this.targetCanvas.getContext('2d');
 
 	// Fill a background.
-	this.targetCanvasContext.fillStyle = '#ffffff';
+	this.targetCanvasContext.fillStyle = '#000000';
 	this.targetCanvasContext.fillRect( 0, 0, this.targetCanvas.width, this.targetCanvas.height );
 
 	document.body.appendChild( this.targetCanvas );
